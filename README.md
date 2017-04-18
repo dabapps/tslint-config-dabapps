@@ -29,7 +29,7 @@ Add the following scripts to your package.json
 ```json
 {
   "scripts": {
-    "lint": "tslint src/ tests/"
+    "lint": "tslint 'src/**/*.{ts,tsx}' 'tests/**/*.{ts,tsx}'"
   }
 }
 ```
@@ -41,7 +41,7 @@ Create a tslint.json in the route of the project and extend the default config.
 ```json
 {
   "extends": [
-    "dabapps"
+    "tslint-config-dabapps"
   ]
 }
 ```
