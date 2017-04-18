@@ -1,0 +1,35 @@
+{
+  "name": "tslint-config-dabapps",
+  "version": "0.0.0",
+  "description": "DabApps ESLint Configuration",
+  "main": "tslint.json",
+  "dependencies": {
+    "tslint-eslint-rules": "4.0.0"
+  },
+  "devDependencies": {
+    "tslint": "5.1.0",
+    "typescript": "2.2.2"
+  },
+  "peerDependencies": {
+    "typescript": ">=2.x.x <3.x.x",
+    "tslint": ">=5.x.x <6.x.x"
+  },
+  "scripts": {
+    "test": "npm run jsonlint && npm run tslint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dabapps/tslint-config-dabapps.git"
+  },
+  "keywords": [
+    "tslint",
+    "linting",
+    "typescript"
+  ],
+  "author": "DabApps",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/dabapps/tslint-config-dabapps/issues"
+  },
+  "homepage": "https://github.com/dabapps/tslint-config-dabapps#readme"
+}
