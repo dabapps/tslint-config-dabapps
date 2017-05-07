@@ -32,6 +32,9 @@
     "switch-default": 2,
     "eofline": 2,
 
-    "no-var-keyword": 2
+    "no-var-keyword": 2,
+    "no-unused-expression": 2,
+    "no-unused-variable": 2,
+    "no-use-before-declare": 2
   }
 }

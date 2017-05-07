@@ -26,10 +26,12 @@ This will update your package.json automatically.
 
 Add the following scripts to your package.json
 
+Note: You must not have a `files` key defined in your `tsconfig.json` or your globs will be ignored.
+
 ```json
 {
   "scripts": {
-    "lint": "tslint 'src/**/*.{ts,tsx}' 'tests/**/*.{ts,tsx}'"
+    "lint": "tslint --project tsconfig.json --type-check 'src/**/*.{ts,tsx}' 'tests/**/*.{ts,tsx}'"
   }
 }
 ```
