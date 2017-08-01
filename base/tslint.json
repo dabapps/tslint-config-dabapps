@@ -37,7 +37,6 @@
     "no-unused-variable": 2,
     "no-use-before-declare": 2,
 
-    // turn off from recommended rules
-    "object-literal-sort-keys": false,
+    "object-literal-sort-keys": false
   }
 }
