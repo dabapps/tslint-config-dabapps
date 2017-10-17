@@ -9,7 +9,7 @@
     "linebreak-style": 2,
     "semicolon": [2, "always"],
     "ter-max-len": [2, 120, 2, { "ignoreComments": true } ],
-    "indent": [2, "spaces"],
+    "indent": [2, "spaces", 2],
     "trailing-comma": [2, {"multiline": "never", "singleline": "never"}],
     "space-before-function-paren": [2, "always"],
 
