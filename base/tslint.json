@@ -5,7 +5,7 @@
   ],
   "rules": {
     "ter-indent": [2, 2, { "SwitchCase": 1, "outerIIFEBody": 1, "MemberExpression": 1, "ArrayExpression": 1, "ObjectExpression": 1 }],
-    "quotemark": [2, "single"],
+    "quotemark": [2, "single", "jsx-double"],
     "linebreak-style": 2,
     "semicolon": [2, "always"],
     "ter-max-len": [2, 120, 2, { "ignoreComments": true } ],
