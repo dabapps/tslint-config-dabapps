@@ -5,6 +5,7 @@
   "main": "tslint.json",
   "dependencies": {
     "tslint-eslint-rules": "4.0.0",
+    "tslint-react": "3.2.0"
   },
   "devDependencies": {
     "tslint": "5.8.0",
