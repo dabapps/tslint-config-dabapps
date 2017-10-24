@@ -4,15 +4,15 @@
   "description": "DabApps ESLint Configuration",
   "main": "tslint.json",
   "dependencies": {
-    "tslint-eslint-rules": "4.0.0"
+    "tslint-eslint-rules": "4.0.0",
   },
   "devDependencies": {
-    "tslint": "5.1.0",
-    "typescript": "2.2.2"
+    "tslint": "5.8.0",
+    "typescript": "2.3.3"
   },
   "peerDependencies": {
-    "typescript": ">=2.x.x <3.x.x",
-    "tslint": ">=5.x.x <6.x.x"
+    "typescript": ">=2.3.3 <3.x.x",
+    "tslint": ">=5.8.x <6.x.x"
   },
   "scripts": {
     "test": "npm run jsonlint && npm run tslint"
