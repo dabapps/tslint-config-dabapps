@@ -8,6 +8,7 @@
     "tslint-react": "3.2.0"
   },
   "devDependencies": {
+    "jsonlint": "1.6.2",
     "tslint": "5.8.0",
     "typescript": "2.3.3"
   },
@@ -16,6 +17,8 @@
     "tslint": ">=5.8.x <6.x.x"
   },
   "scripts": {
+    "jsonlint": "find . -path ./node_modules -prune -o -type f -name '*.json' -exec jsonlint -q '{}' \\;",
+    "tslint": "tslint --project 'ts/tsconfig.json' 'ts/**/*.{ts,tsx}'",
     "test": "npm run jsonlint && npm run tslint"
   },
   "repository": {
