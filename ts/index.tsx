@@ -1,34 +1,24 @@
-type ReactElement = string;
-type Tag = 'div' | 'span' | 'ul' | 'ol' | 'li';
+import * as React from 'react';
+import * as ReactDOM from 'react-dom';
 
-interface StringIndexedObject {
-  [index: string]: any;
+interface ChildProps {
+  name: string;
 }
 
-const formatProps = (props: StringIndexedObject) => {
-  return Object.keys(props)
-    .map((key) => `${key}=${props[key]}`)
-    .join(' ');
-};
+const Child = ({name}: ChildProps) => (
+  <p>
+    Hello, {name}!
+  </p>
+);
 
-const React = {
-  createElement: (
-    tag: string,
-    props?: StringIndexedObject,
-    ...children: ReactElement[]
-  ) => `<${tag}${children ? undefined : '/'}>${children}${children ? `</${tag}>` : undefined}`,
-};
-
-interface Interface {
-  render(): string;
-}
-
-class Thing implements Interface {
+class Test extends React.Component {
   public render() {
-    return React.createElement(
-      'div',
-      { foo: 'bar' },
-      React.createElement('span')
+    return (
+      <div className="test" style={{width: 100}}>
+        <Child name="World" />
+      </div>
     );
   }
 }
+
+ReactDOM.render(<Test />, document.getElementById('test'));
