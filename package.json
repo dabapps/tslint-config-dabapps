@@ -1,20 +1,28 @@
 {
   "name": "tslint-config-dabapps",
-  "version": "0.3.1",
+  "version": "0.4.0",
   "description": "DabApps ESLint Configuration",
   "main": "tslint.json",
   "dependencies": {
-    "tslint-eslint-rules": "4.0.0"
+    "tslint-eslint-rules": "4.0.0",
+    "tslint-react": "3.2.0"
   },
   "devDependencies": {
-    "tslint": "5.1.0",
-    "typescript": "2.2.2"
+    "@types/react": "16.0.19",
+    "@types/react-dom": "16.0.2",
+    "jsonlint": "1.6.2",
+    "react": "16.0.0",
+    "react-dom": "16.0.0",
+    "tslint": "5.8.0",
+    "typescript": "2.3.3"
   },
   "peerDependencies": {
-    "typescript": ">=2.x.x <3.x.x",
-    "tslint": ">=5.x.x <6.x.x"
+    "typescript": ">=2.3.3 <3.x.x",
+    "tslint": ">=5.8.x <6.x.x"
   },
   "scripts": {
+    "jsonlint": "find . -path ./node_modules -prune -o -type f -name '*.json' -exec jsonlint -q '{}' \\;",
+    "tslint": "tslint --project 'ts/tsconfig.json' 'ts/**/*.{ts,tsx}'",
     "test": "npm run jsonlint && npm run tslint"
   },
   "repository": {

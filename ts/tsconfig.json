@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "strictNullChecks": true,
+    "noImplicitAny": true,
+    "pretty": true,
+    "jsx": "react",
+    "target": "es5"
+  }
+}
