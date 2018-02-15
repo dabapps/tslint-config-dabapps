@@ -1,6 +1,11 @@
 
 {
-  "extends": ["tslint:recommended", "tslint-eslint-rules", "tslint-react"],
+  "extends": [
+    "tslint:recommended",
+    "tslint-eslint-rules",
+    "tslint-react",
+    "tslint-config-prettier"
+  ],
   "rules": {
     "quotemark": [true, "single", "jsx-double", "avoid-template"],
     "linebreak-style": [true, "LF"],
