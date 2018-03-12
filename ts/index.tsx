@@ -24,7 +24,7 @@ class Test extends PureComponent<TestProps, {}> {
   public constructor(props: TestProps) {
     super(props);
 
-    this.boundMethod1 = (event: React.TouchEvent<HTMLDivElement>) => {
+    this.boundMethod1 = (event: TouchEvent<HTMLDivElement>) => {
       event.preventDefault();
     };
   }
@@ -49,7 +49,7 @@ class Test extends PureComponent<TestProps, {}> {
     );
   }
 
-  private boundMethod1(event: React.TouchEvent<HTMLDivElement>) {
+  private boundMethod1(event: TouchEvent<HTMLDivElement>) {
     event.preventDefault();
   }
 
