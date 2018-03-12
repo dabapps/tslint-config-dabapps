@@ -58,4 +58,4 @@ class Test extends PureComponent<TestProps, {}> {
   };
 }
 
-ReactDOM.render(<Test className={'test'} />, document.getElementById('test'));
+ReactDOM.render(<Test className="test" />, document.getElementById('test'));
