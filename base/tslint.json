@@ -3,8 +3,7 @@
   "extends": [
     "tslint:recommended",
     "tslint-eslint-rules",
-    "tslint-react",
-    "tslint-config-prettier"
+    "tslint-react"
   ],
   "rules": {
     "quotemark": [true, "single", "jsx-double", "avoid-template"],

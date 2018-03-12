@@ -1,6 +1,6 @@
 {
   "name": "tslint-config-dabapps",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "description": "DabApps ESLint Configuration",
   "main": "tslint.json",
   "dependencies": {
@@ -12,6 +12,7 @@
     "@types/react": "16.0.19",
     "@types/react-dom": "16.0.2",
     "jsonlint": "1.6.2",
+    "prettier": "1.11.1",
     "react": "16.0.0",
     "react-dom": "16.0.0",
     "tslint": "5.8.0",
@@ -22,9 +23,11 @@
     "tslint": ">=5.8.x <6.x.x"
   },
   "scripts": {
+    "prettier": "prettier --write 'ts/**/*.ts?(x)'",
+    "prettier-check": "diffs=$(prettier --list-different 'ts/**/*.ts?(x)'); if [ ! -z $diffs ]; then echo \"Run 'npm run prettier'\nThe following files need formatting:\n$diffs\" && exit 1; fi;",
     "jsonlint": "find . -path ./node_modules -prune -o -type f -name '*.json' -exec jsonlint -q '{}' \\;",
     "tslint": "tslint --project 'ts/tsconfig.json' 'ts/**/*.{ts,tsx}'",
-    "test": "npm run jsonlint && npm run tslint"
+    "test": "npm run prettier-check && npm run jsonlint && npm run tslint"
   },
   "repository": {
     "type": "git",
