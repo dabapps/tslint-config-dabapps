@@ -1,5 +1,11 @@
 import * as React from 'react';
-import { Component, HTMLProps } from 'react';
+import {
+  HTMLProps,
+  MouseEvent,
+  PureComponent,
+  ReactElement,
+  TouchEvent,
+} from 'react';
 import * as ReactDOM from 'react-dom';
 
 interface ChildProps {
@@ -10,12 +16,27 @@ interface TestProps extends HTMLProps<HTMLDivElement> {
   className: string;
 }
 
-const Child = ({ name }: ChildProps) => <p>Hello, {name}!</p>;
+const Child = ({ name }: ChildProps): ReactElement<any> => (
+  <p>Hello, {name}!</p>
+);
 
-class Test extends Component<TestProps, {}> {
+class Test extends PureComponent<TestProps, {}> {
+  public constructor(props: TestProps) {
+    super(props);
+
+    this.boundMethod1 = (event: React.TouchEvent<HTMLDivElement>) => {
+      event.preventDefault();
+    };
+  }
+
   public render() {
     return (
-      <div className="test" style={{ width: 100 }} onClick={this.boundMethod}>
+      <div
+        className="test"
+        style={{ width: 100 }}
+        onTouchStart={this.boundMethod1}
+        onClick={this.boundMethod2}
+      >
         <Child name="World" />
         {[
           <div key={0} />,
@@ -28,7 +49,11 @@ class Test extends Component<TestProps, {}> {
     );
   }
 
-  private boundMethod = (event: React.MouseEvent<HTMLDivElement>) => {
+  private boundMethod1(event: React.TouchEvent<HTMLDivElement>) {
+    event.preventDefault();
+  }
+
+  private boundMethod2 = (event: MouseEvent<HTMLDivElement>) => {
     event.preventDefault();
   };
 }
