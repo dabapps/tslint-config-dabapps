@@ -1,5 +1,6 @@
 {
   "extends": [
-    "./base/tslint.json"
+    "./base/tslint.json",
+    "tslint-config-prettier"
   ]
 }
