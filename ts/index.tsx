@@ -5,16 +5,12 @@ interface ChildProps {
   name: string;
 }
 
-const Child = ({name}: ChildProps) => (
-  <p>
-    Hello, {name}!
-  </p>
-);
+const Child = ({ name }: ChildProps) => <p>Hello, {name}!</p>;
 
 class Test extends React.Component {
   public render() {
     return (
-      <div className="test" style={{width: 100}}>
+      <div className="test" style={{ width: 100 }}>
         <Child name="World" />
       </div>
     );
