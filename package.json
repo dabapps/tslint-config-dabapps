@@ -1,6 +1,6 @@
 {
   "name": "tslint-config-dabapps",
-  "version": "0.5.1",
+  "version": "0.5.2",
   "description": "DabApps ESLint Configuration",
   "main": "tslint.json",
   "dependencies": {
@@ -19,8 +19,8 @@
     "typescript": "2.3.3"
   },
   "peerDependencies": {
-    "typescript": ">=2.3.3 <3.x.x",
-    "tslint": ">=5.8.x <6.x.x"
+    "typescript": ">= 2",
+    "tslint": ">= 5.8.x < 6.x.x"
   },
   "scripts": {
     "prettier": "prettier --write 'ts/**/*.ts?(x)'",
