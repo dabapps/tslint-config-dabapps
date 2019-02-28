@@ -6,7 +6,7 @@ This repository includes a default tslint config based on tslint's recommended r
 
 ## Install
 
-Install a specific version of the tslint config with NPM. You can see a full list of versions here.
+Install a specific version of the tslint config with NPM. You can see a full list of versions [here](https://github.com/dabapps/tslint-config-dabapps/releases).
 
 ```shell
 npm i dabapps/tslint-config-dabapps#v0.0.0 --save-dev
