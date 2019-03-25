@@ -1,7 +1,7 @@
 {
   "name": "tslint-config-dabapps",
   "version": "0.5.4",
-  "description": "DabApps ESLint Configuration",
+  "description": "DabApps TSLint Configuration",
   "main": "tslint.json",
   "dependencies": {
     "tslint-config-prettier": "1.8.0",
