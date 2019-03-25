@@ -6,7 +6,8 @@
   "dependencies": {
     "tslint-config-prettier": "1.8.0",
     "tslint-eslint-rules": "4.0.0",
-    "tslint-react": "3.2.0"
+    "tslint-react": "3.2.0",
+    "tslint-react-native": "0.0.6"
   },
   "devDependencies": {
     "@types/react": "16.0.19",
@@ -16,7 +17,6 @@
     "react": "16.0.0",
     "react-dom": "16.0.0",
     "tslint": "5.8.0",
-    "tslint-react-native": "0.0.6",
     "typescript": "2.3.3"
   },
   "peerDependencies": {
