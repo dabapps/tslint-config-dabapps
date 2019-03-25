@@ -1,7 +1,7 @@
 {
   "name": "tslint-config-dabapps",
-  "version": "0.5.3",
-  "description": "DabApps ESLint Configuration",
+  "version": "0.5.4",
+  "description": "DabApps TSLint Configuration",
   "main": "tslint.json",
   "dependencies": {
     "tslint-config-prettier": "1.8.0",
@@ -16,7 +16,7 @@
     "react": "16.0.0",
     "react-dom": "16.0.0",
     "tslint": "5.8.0",
-    "typescript": "2.3.3"
+    "typescript": "^3.3.4000"
   },
   "peerDependencies": {
     "typescript": ">= 2",
