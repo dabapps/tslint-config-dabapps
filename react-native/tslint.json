@@ -1,0 +1,9 @@
+{
+    "extends": [
+      "../tslint.json", "tslint-react-native"
+    ],
+    "rules": {
+        "no-unused-styles": true
+    }
+  }
+  
