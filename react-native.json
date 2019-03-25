@@ -1,6 +1,6 @@
 {
     "extends": [
-      "../tslint.json", "tslint-react-native"
+      "./tslint.json", "tslint-react-native"
     ],
     "rules": {
         "no-unused-styles": true
