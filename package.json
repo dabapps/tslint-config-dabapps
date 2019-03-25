@@ -4,19 +4,19 @@
   "description": "DabApps TSLint Configuration",
   "main": "tslint.json",
   "dependencies": {
-    "tslint-config-prettier": "1.8.0",
-    "tslint-eslint-rules": "4.0.0",
-    "tslint-react": "3.2.0",
-    "tslint-react-native": "0.0.6"
+    "tslint-config-prettier": "^1.8.0",
+    "tslint-eslint-rules": "^4.0.0",
+    "tslint-react": "^3.2.0",
+    "tslint-react-native": "^0.0.6"
   },
   "devDependencies": {
     "@types/react": "^16.8.8",
     "@types/react-dom": "^16.8.3",
-    "jsonlint": "1.6.2",
-    "prettier": "1.11.1",
+    "jsonlint": "^1.6.2",
+    "prettier": "^1.11.1",
     "react": "^16.8.5",
     "react-dom": "^16.8.5",
-    "tslint": "5.8.0",
+    "tslint": "^5.8.0",
     "typescript": "^3.3.4000"
   },
   "peerDependencies": {
