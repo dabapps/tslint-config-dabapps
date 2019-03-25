@@ -3,6 +3,13 @@
   "version": "0.5.4",
   "description": "DabApps TSLint Configuration",
   "main": "tslint.json",
+  "scripts": {
+    "prettier": "prettier --write 'ts/**/*.ts?(x)'",
+    "prettier-check": "diffs=$(prettier --list-different 'ts/**/*.ts?(x)'); if [ ! -z $diffs ]; then echo \"Run 'npm run prettier'\nThe following files need formatting:\n$diffs\" && exit 1; fi;",
+    "jsonlint": "find . -path ./node_modules -prune -o -type f -name '*.json' -exec jsonlint -q '{}' \\;",
+    "tslint": "tslint --project 'ts/tsconfig.json' 'ts/**/*.{ts,tsx}'",
+    "test": "npm run prettier-check && npm run jsonlint && npm run tslint"
+  },
   "dependencies": {
     "tslint-config-prettier": "^1.18.0",
     "tslint-eslint-rules": "^4.1.1",
@@ -22,13 +29,6 @@
   "peerDependencies": {
     "typescript": ">= 2",
     "tslint": ">= 5.8.x < 6.x.x"
-  },
-  "scripts": {
-    "prettier": "prettier --write 'ts/**/*.ts?(x)'",
-    "prettier-check": "diffs=$(prettier --list-different 'ts/**/*.ts?(x)'); if [ ! -z $diffs ]; then echo \"Run 'npm run prettier'\nThe following files need formatting:\n$diffs\" && exit 1; fi;",
-    "jsonlint": "find . -path ./node_modules -prune -o -type f -name '*.json' -exec jsonlint -q '{}' \\;",
-    "tslint": "tslint --project 'ts/tsconfig.json' 'ts/**/*.{ts,tsx}'",
-    "test": "npm run prettier-check && npm run jsonlint && npm run tslint"
   },
   "repository": {
     "type": "git",
