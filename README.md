@@ -9,14 +9,14 @@ This repository includes a default tslint config based on tslint's recommended r
 Install a specific version of the tslint config with NPM. You can see a full list of versions [here](https://github.com/dabapps/tslint-config-dabapps/releases).
 
 ```shell
-npm i dabapps/tslint-config-dabapps#v0.0.0 --save-dev
+npm i dabapps/tslint-config-dabapps#vx.x.x --save-dev
 ```
 
 This will update your package.json automatically.
 
 ```json
 "devDependencies": {
-  "tslint-config-dabapps": "dabapps/tslint-config-dabapps#v0.0.0",
+  "tslint-config-dabapps": "dabapps/tslint-config-dabapps#vx.x.x",
 }
 ```
 
@@ -31,19 +31,29 @@ Note: You must not have a `files` key defined in your `tsconfig.json` or your gl
 ```json
 {
   "scripts": {
-    "lint": "tslint --project tsconfig.json --type-check 'src/**/*.{ts,tsx}' 'tests/**/*.{ts,tsx}'"
+    "lint": "tslint --project tsconfig.json '{src,tests}/**/*.{ts,tsx}'"
   }
 }
 ```
 
 ### Default Config
 
-Create a tslint.json in the route of the project and extend the default config.
+Create a tslint.json in the route of the project and extend the default config:
 
 ```json
 {
   "extends": [
     "tslint-config-dabapps"
+  ]
+}
+```
+
+If you are using react-native you should extend the following:
+
+```json
+{
+  "extends": [
+    "tslint-config-dabapps/react-native"
   ]
 }
 ```
