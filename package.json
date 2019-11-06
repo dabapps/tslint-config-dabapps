@@ -1,6 +1,6 @@
 {
   "name": "tslint-config-dabapps",
-  "version": "0.6.1",
+  "version": "0.6.2",
   "description": "DabApps TSLint Configuration",
   "main": "tslint.json",
   "scripts": {
@@ -28,7 +28,7 @@
   },
   "peerDependencies": {
     "typescript": ">= 2.9",
-    "tslint": ">= 5.8.x < 6.x.x"
+    "tslint": ">= 5.20 < 6"
   },
   "repository": {
     "type": "git",

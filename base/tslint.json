@@ -5,6 +5,35 @@
     "tslint-react"
   ],
   "rules": {
+    "variable-name": [
+      true,
+      "check-format",
+      "allow-leading-underscore",
+      "allow-pascal-case"
+    ],
+    "ordered-imports": [
+      true,
+      {
+        "grouped-imports": true,
+        "groups": [
+          {
+            "name": "node modules",
+            "match": "^[@a-zA-Z]",
+            "order": 0
+          },
+          {
+            "name": "local modules",
+            "match": "^[^@a-zA-Z]",
+            "order": 1
+          },
+          {
+            "name": "unknown",
+            "match": null,
+            "order": 2
+          }
+        ]
+      }
+    ],
     "quotemark": [true, "single", "jsx-double", "avoid-template"],
     "linebreak-style": [true, "LF"],
     "semicolon": [true, "always", "ignore-interfaces"],
@@ -40,7 +69,7 @@
         "esSpecCompliant": true
       }
     ],
-    "space-before-function-paren": [2, "always"],
+    "space-before-function-paren": [true, "always"],
     "strict-type-predicates": true,
 
     "object-literal-sort-keys": false,
