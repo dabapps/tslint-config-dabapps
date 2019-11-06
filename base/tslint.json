@@ -40,7 +40,7 @@
         "esSpecCompliant": true
       }
     ],
-    "space-before-function-paren": [2, "always"],
+    "space-before-function-paren": [true, "always"],
     "strict-type-predicates": true,
 
     "object-literal-sort-keys": false,
