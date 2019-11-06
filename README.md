@@ -9,14 +9,16 @@ This repository includes a default tslint config based on tslint's recommended r
 Install a specific version of the tslint config with NPM. You can see a full list of versions [here](https://github.com/dabapps/tslint-config-dabapps/releases).
 
 ```shell
-npm i dabapps/tslint-config-dabapps#vx.x.x --save-dev
+npm i tslint-config-dabapps@x.x.x -D
 ```
 
-This will update your package.json automatically.
+Note: `-D` is shorthand for `--save-dev`.
+
+This will update your `package.json` automatically, as seen below.
 
 ```json
 "devDependencies": {
-  "tslint-config-dabapps": "dabapps/tslint-config-dabapps#vx.x.x",
+  "tslint-config-dabapps": "x.x.x",
 }
 ```
 
@@ -24,7 +26,7 @@ This will update your package.json automatically.
 
 ### NPM Scripts
 
-Add the following scripts to your package.json
+Add the following scripts to your `package.json`.
 
 Note: You must not have a `files` key defined in your `tsconfig.json` or your globs will be ignored.
 
@@ -38,7 +40,7 @@ Note: You must not have a `files` key defined in your `tsconfig.json` or your gl
 
 ### Default Config
 
-Create a tslint.json in the route of the project and extend the default config:
+Create a `tslint.json` in the route of the project and extend the default config:
 
 ```json
 {
@@ -48,7 +50,7 @@ Create a tslint.json in the route of the project and extend the default config:
 }
 ```
 
-If you are using react-native you should extend the following:
+If you are using `react-native` you should extend the following:
 
 ```json
 {
