@@ -67,7 +67,6 @@
 
     "no-var-keyword": true,
     "no-unused-expression": true,
-    "no-use-before-declare": true,
 
     "jsx-alignment": true,
     "jsx-boolean-value": [true, "never"],
