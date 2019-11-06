@@ -1,6 +1,6 @@
 {
   "name": "tslint-config-dabapps",
-  "version": "0.5.5",
+  "version": "0.6.0",
   "description": "DabApps TSLint Configuration",
   "main": "tslint.json",
   "scripts": {
